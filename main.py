@@ -8,7 +8,7 @@ import logging
 
 
 app = Flask(__name__)
-app.config["DATABASE_URL"] = 'postgresql://postgres:captainamerica55443@localhost/post_memories'
+app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://postgres:captainamerica55443@localhost/post_memories'
 bcrypt = Bcrypt(app)
 db = SQLAlchemy(app)
 CORS(app)
