@@ -134,7 +134,6 @@ def get_posts():
     for post in posts:
         post_list.append(format_post(post))
     return {'posts': post_list}
-# jka
 
 
 @app.route('/login', methods=['POST'])
