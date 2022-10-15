@@ -84,7 +84,7 @@ def format_comment(comment):
 
 @app.route('/')
 def home():
-    return "Hello Server is Working!"
+    return "Server is Working!"
 
 
 @app.route('/register', methods=['POST'])
